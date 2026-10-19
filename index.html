@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svashasan Labs × MindGrove Technologies | Strategic partnership to ship Svashasan OS</title>
+    <meta name="robots" content="noindex, nofollow">
+     <link rel="icon" type="image/png" href="2.png" sizes="32x32">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N89XZGM4');</script>
+<!-- End Google Tag Manager -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                        calibri: ['Calibri', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlack: '#0B0B0B',
+                        brandCharcoal: '#1A1A1A',
+                        mutedText: '#666666',
+                        metaText: '#8A8A8A',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mobile menu animation styles */
+        #mobile-menu {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            pointer-events: none;
+            transition: opacity 0.35s ease-out, transform 0.35s ease-out, visibility 0s linear 0.35s;
+            display: flex;
+        }
+
+        #mobile-menu.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            transition: opacity 0.35s ease-out, transform 0.35s ease-out, visibility 0s linear 0s;
+        }
+
+        #mobile-menu ul li {
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        }
+
+        #mobile-menu.active ul li {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        #mobile-menu.active ul li:nth-child(1) { transition-delay: 0.05s; }
+        #mobile-menu.active ul li:nth-child(2) { transition-delay: 0.10s; }
+        #mobile-menu.active ul li:nth-child(3) { transition-delay: 0.15s; }
+        #mobile-menu.active ul li:nth-child(4) { transition-delay: 0.20s; }
+        #mobile-menu.active ul li:nth-child(5) { transition-delay: 0.25s; }
+        #mobile-menu.active ul li:nth-child(6) { transition-delay: 0.30s; }
+        #mobile-menu.active ul li:nth-child(7) { transition-delay: 0.35s; }
+
+        #menu-button {
+            align-items: center;
+            justify-content: center;
+        }
+
+        #menu-open-icon {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        #menu-button.active #menu-open-icon {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        #menu-close-icon {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        #menu-button.active #menu-close-icon {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0.75rem 0 !important;
+            }
+
+            header .container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            #mobile-menu {
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #mobile-menu ul {
+                gap: 1.75rem !important;
+            }
+
+            #mobile-menu a {
+                font-size: 1.5rem !important;
+            }
+        }
+
+@media (max-width: 480px) {
+            header .container {
+                gap: 0.5rem;
+            }
+
+            .header-right-group a svg,
+            .header-right-group button svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            #mobile-menu {
+                padding-top: 4.5rem;
+            }
+
+            #mobile-menu ul {
+                gap: 1.5rem !important;
+            }
+
+            #mobile-menu a {
+                font-size: 1.25rem !important;
+            }
+        }
+
+        /* Navigation sidebar link styles */
+        .nav-link {
+            outline: none;
+            text-decoration: none;
+        }
+        .nav-link:focus-visible {
+            outline: none;
+        }
+        .nav-link.active,
+        .nav-link:hover {
+            background-color: rgba(0,0,0,0.04);
+            box-shadow: 0 0 12px rgba(0,0,0,0.12);
+            transition: background-color 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="/global-loader.css">
+    <script src="/global-loader.js"></script>
+    <style>
+        :root {
+            --paper: #fffdf7;
+            --line: #d9d2c5;
+            --muted: #5c574e;
+            --ink: #161513;
+        }
+
+        h1, h2, h3 {
+            scroll-margin-top: 6rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white min-h-screen flex flex-col">
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N89XZGM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-80 backdrop-blur-md py-4 shadow-sm">
+        <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 gap-4">
+            <!-- Logo -->
+            <a href="https://svashasan.com/" class="flex-shrink-0">
+                <img src="2.png" alt="Svashasan Logo" class="h-10 w-auto object-contain">
+            </a>
+            <!-- Search Bar -->
+            <div class="relative flex items-center">
+                <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                <input id="search-input" type="text" placeholder="Search research..." oninput="handleGlobalSearch(this.value)" class="w-36 sm:w-44 focus:w-40 sm:focus:w-56 pl-8 pr-3 py-1.5 bg-gray-50 border border-transparent focus:bg-white focus:border-gray-300 rounded-full text-xs transition-all duration-300 outline-none text-brandBlack">
+                <div id="search-results" class="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hidden z-50 max-h-60 overflow-y-auto"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-1 min-h-0">
+    <!-- Left navigation sidebar -->
+    <nav id="toc" class="hidden md:block sticky top-20 w-64 px-4 py-6 bg-white/80 backdrop-blur-md max-h-[calc(100vh-5rem)] overflow-y-auto transition-all duration-300 ease-out self-start" aria-label="Table of contents">
+<ul class="space-y-2 text-sm">
+<li><a href="#svashasan-labs-mindgrove-technology" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">Svashasan Labs × MindGrove Technologies</a></li>
+<li><a href="#1-where-the-two-companies-fit-together" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">1. Where the two companies fit together</a></li>
+<li><a href="#2-what-the-companies-should-actually-build-together" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">2. What the companies should actually build together</a></li>
+<li><a href="#3-division-of-responsibilities" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">3. Division of responsibilities</a></li>
+<li><a href="#4-the-proposed-technical-architecture" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">4. The proposed technical architecture</a></li>
+<li><a href="#5-commercial-model-a-slightly-larger-share-for-mindgrove" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">5. Commercial model: a slightly larger share for MindGrove</a></li>
+<li><a href="#6-how-to-structure-the-90-day-execution-plan" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">6. How to structure the 90-day execution plan</a></li>
+<li><a href="#7-automotive-safety-and-cybersecurity-boundaries" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">7. Automotive safety and cybersecurity boundaries</a></li>
+<li><a href="#8-how-both-sides-win-commercially" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">8. How both sides win commercially</a></li>
+<li><a href="#9-intellectual-property-and-contract-structure" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">9. Intellectual property and contract structure</a></li>
+<li><a href="#10-risks-to-resolve-before-signing" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">10. Risks to resolve before signing</a></li>
+<li><a href="#final-recommendation" class="nav-link block px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100 hover:shadow-[0_0_8px_rgba(0,0,0,0.15)] transition-all duration-300">Final recommendation</a></li>
+</ul>
+    </nav>
+
+    <main class="flex-grow pt-24 px-4 md:px-6">
+        <div class="container mx-auto max-w-4xl text-gray-700">
+<h1 id="svashasan-labs-mindgrove-technology" class="text-[22px] font-bold text-gray-800 text-center mb-4 mt-10 flex items-center justify-center gap-2 flex-wrap"><img src="2.png" alt="Svashasan Logo" class="h-8 w-auto" onerror="this.style.display='none'"><span>Svashasan Labs</span><span class="separator" style="border-left:1px solid currentColor;height:1em;margin:0 0.5rem;"></span><img src="mindgrove.png" alt="MindGrove Technologies" class="h-8 w-auto" onerror="this.style.display='none'"><span>MindGrove Technologies</span></h1>
+<h2 id="strategic-partnership-to-ship-svashasan-os" class="text-[18px] font-semibold text-gray-800 text-center mb-8 mt-0">Strategic partnership to ship Svashasan OS</h2>
+<p class="text-[16px] mb-4 leading-relaxed">We would like to propose a partnership in which <strong>Svashasan Labs remains the product and intellectual-property owner, while MindGrove Technologies becomes our applied software engineering and AI development partner, responsible for accelerating delivery.</strong> We are offering MindGrove a slightly larger share of the economics generated by the work it directly delivers, in exchange for taking meaningful engineering responsibility and helping us reach commercial pilots faster.</p>
+<p class="text-[16px] mb-4 leading-relaxed">We recommend starting with a <strong>90-day joint engineering programme</strong>, rather than a broad strategic alliance, equity arrangement or transfer of core technology. Together we can prove that the partnership produces a working, measurable component of Svashasan OS, and then expand based on results.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="1-where-the-two-companies-fit-together" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">1. Where the two companies fit together</h1>
+<p class="text-[16px] mb-4 leading-relaxed">We see MindGrove's strengths in applied AI, software development, custom model work, local model hosting and improving software delivery workflows. We believe those capabilities complement our existing simulated EV autonomy MVP, ROS 2-based integration work and longer-term ambition to build an operating-system layer for EVs.</p>
+<p class="text-[16px] mb-4 leading-relaxed">We also want to be transparent about scope: we are not assuming that MindGrove has already delivered automotive-grade embedded software, production vehicle-control systems or functional-safety-certified software. For that reason, this partnership should initially focus on accelerating software delivery and validation, rather than on independently engineering a production-ready automotive OS.</p>
+<blockquote class="border-l-4 border-gray-800 pl-4 my-5 text-[16px] leading-relaxed text-gray-800 italic"><strong>The partnership structure</strong></blockquote>
+<h2 id="svashasan-labs" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Svashasan Labs</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><em>Product owner · Automotive domain · Core technology</em></p>
+<p class="text-[16px] mb-4 leading-relaxed">Owns Svashasan OS architecture, automotive integration requirements, core technology, product roadmap, safety boundaries, core IP and OEM relationships.</p>
+<h2 id="shared-engineering-interfaces-milestones-testing-and-commercial-delivery" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">↕ Shared engineering interfaces, milestones, testing and commercial delivery</h2>
+<h2 id="mindgrove-technology" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">MindGrove Technologies</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><em>Applied software engineering · AI R&amp;D · Delivery acceleration</em></p>
+<p class="text-[16px] mb-4 leading-relaxed">Would build the agreed engineering tools, software modules, automated testing infrastructure and supporting AI features under Svashasan's technical direction.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Joint outcome:</strong> A reproducible, testable Svashasan OS release candidate that can be demonstrated to prospective EV manufacturers and technology partners, followed by a controlled pilot.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The central principle is simple: <strong>MindGrove owns delivery of its assigned workstream, while Svashasan retains control of the product being delivered.</strong></p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="2-what-the-companies-should-actually-build-together" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">2. What the companies should actually build together</h1>
+<p class="text-[16px] mb-4 leading-relaxed">We are not proposing that MindGrove rewrite Svashasan OS or rebuild the autonomous-driving stack from scratch. That would create a large engineering dependency before the partnership has demonstrated value.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Instead, we propose a joint programme called the <strong>Svashasan OS Integration &amp; Validation Platform</strong>.</p>
+<p class="text-[16px] mb-4 leading-relaxed">This is an internal engineering layer that would help our combined team integrate, test, package and demonstrate the OS more reliably.</p>
+<h2 id="workstream-a-build-and-release-automation" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Workstream A: Build and release automation</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Priority: Highest</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove would set up reproducible builds, dependency management, CI pipelines, automated smoke tests, versioned release artifacts and engineering documentation.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Value to Svashasan:</strong> Less time spent manually setting up, integrating and debugging each release.</p>
+<h2 id="workstream-b-simulation-and-regression-testing" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Workstream B: Simulation and regression testing</h2>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove would help automate the execution of agreed ROS 2 simulation scenarios, record logs, compare outputs against baselines and flag regressions.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Value to Svashasan:</strong> Every relevant code change can be tested against the same scenarios rather than relying on a successful manual demonstration.</p>
+<h2 id="workstream-c-diagnostics-and-engineering-intelligence" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Workstream C: Diagnostics and engineering intelligence</h2>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove would build a developer-facing diagnostic interface that organizes error logs, system events, performance measurements and simulation failures. An AI-assisted layer could help engineers search logs and summarize likely failure causes.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Value to Svashasan:</strong> Faster debugging and a clearer demonstration of system observability to future customers.</p>
+<h2 id="workstream-d-integration-ready-packaging" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Workstream D: Integration-ready packaging</h2>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove would document and standardize module interfaces, dependency versions, configuration, installation procedures and release notes, and prepare the framework to expand from simulation into bench testing and hardware-in-the-loop testing when the relevant hardware is available.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Value to Svashasan:</strong> A more repeatable process for moving from simulation demonstrations toward real hardware integration.</p>
+<p class="text-[16px] mb-4 leading-relaxed">These are proposed workstreams, not claims about MindGrove's existing automotive capabilities. We suggest confirming the assignment through a paid technical assessment of the relevant skills, so both sides are confident in the scope.</p>
+<h2 id="the-first-product-milestone" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">The first product milestone</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Our proposed first joint deliverable is a <strong>reproducible Svashasan OS simulation release</strong>.</p>
+<p class="text-[16px] mb-4 leading-relaxed">It would include:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1"><li>A documented, reproducible development and build environment.</li><li>Automated execution of an agreed collection of simulation scenarios.</li><li>Versioned logs, test results and release artifacts.</li><li>A regression report identifying failed tests and performance changes.</li><li>An installation guide and a release acceptance checklist.</li><li>A demonstration showing the same software build passing the agreed test procedure consistently.</li></ul>
+<p class="text-[16px] mb-4 leading-relaxed">We would not market this milestone as an automotive-certified operating system. It is an engineering release candidate that improves the quality and credibility of the existing MVP.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="3-division-of-responsibilities" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">3. Division of responsibilities</h1>
+<p class="text-[16px] mb-4 leading-relaxed">We propose writing the division of responsibilities into the statement of work.</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Area</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Svashasan Labs</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">MindGrove Technologies</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Core OS architecture</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Accountable; retains architecture authority</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Implements agreed interfaces and tooling</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">ROS 2 integration</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Defines system requirements and approves integration</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Builds automation and supporting integration components</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Perception and autonomy</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Owns autonomy design, performance targets and validation</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Supports test tooling; optional algorithm work only after technical assessment</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Vehicle-control interfaces</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Owns requirements and approves all changes</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Works only within explicitly authorized interfaces</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Simulation testing</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Defines scenarios and expected vehicle behaviour</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Automates runs, reporting and regression detection</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Developer productivity</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Defines workflow requirements</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Leads tool development and engineering automation</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">AI-assisted diagnostics</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Approves data access, outputs and deployment</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Builds non-safety-critical diagnostic features</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Security and OTA</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Owns the overall architecture and coordinates relevant specialists</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Contributes test automation or integration only within a defined scope</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">OEM relationships</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Leads product positioning, customer ownership and vehicle partnerships</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Supports technical demonstrations and joint sales where agreed</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Release acceptance</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Has final approval over the Svashasan OS release</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Supplies test evidence, code and documentation</td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Decision rights matter more than titles.</strong> MindGrove would have autonomy over implementation details within its assigned workstream. Svashasan would retain the final decision on system architecture, interfaces, release readiness and commercial commitments involving the OS.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="4-the-proposed-technical-architecture" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">4. The proposed technical architecture</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The partnership is designed to extend the existing product rather than introduce a competing architecture.</p>
+<pre class="text-[13px] sm:text-[14px] leading-relaxed font-mono bg-[#fffdf7] border border-[#d9d2c5] text-[#161513] p-4 mb-6 overflow-x-auto whitespace-pre">┌─────────────────────────────────────────────────────────┐
+│               EV HARDWARE / SIMULATION                  │
+│       Vehicle interfaces · Sensors · Simulated EV       │
+└────────────────────────────┬────────────────────────────┘
+                             ↕
+┌─────────────────────────────────────────────────────────┐
+│                   SVASHASAN OS CORE                     │
+│  Perception · Navigation · Decision-making · Control    │
+│                                                         │
+│                   Owned by Svashasan                    │
+└────────────────────────────┬────────────────────────────┘
+                             ↕
+┌─────────────────────────────────────────────────────────┐
+│           INTEGRATION &amp; VALIDATION LAYER                │
+│  Build pipelines · Simulation automation · Test results │
+│  Logs · Diagnostics                                      │
+│                                                         │
+│      MindGrove implements; Svashasan specifies/accepts    │
+└────────────────────────────┬────────────────────────────┘
+                             ↓
+┌─────────────────────────────────────────────────────────┐
+│            RELEASE EVIDENCE &amp; INTEGRATION               │
+│ Reproducible build · Test report · Known limitations    │
+│                 Integration documentation               │
+└─────────────────────────────────────────────────────────┘</pre>
+<p class="text-[16px] mb-4 leading-relaxed">The architecture preserves a separation between the OS's real-time vehicle-control path and the supporting engineering intelligence layer. AI-assisted diagnostics would initially operate on development logs and approved telemetry, not issue direct steering or braking commands.</p>
+<p class="text-[16px] mb-4 leading-relaxed">As Svashasan is also exploring other technology partnerships, we will maintain clean boundaries across suppliers: for example, MindGrove would not be expected to redesign the quantum-safe OTA security scope or the silicon-specific work being explored with other partners. Any integration would follow Svashasan's agreed interfaces.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="5-commercial-model-a-slightly-larger-share-for-mindgrove" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">5. Commercial model: a slightly larger share for MindGrove</h1>
+<p class="text-[16px] mb-4 leading-relaxed">We propose giving MindGrove an advantage in the <strong>joint programme's delivery economics</strong>, without equity or a permanent claim on all Svashasan OS revenue.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The 55/45 split below is our proposed starting point for discussion, and we welcome MindGrove's views on it.</p>
+<h2 id="recommended-economics" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Proposed economics</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>For the jointly delivered programme and separately contracted add-on modules</strong></p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Partner</th><th class="text-right font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Share</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Basis</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>MindGrove Technologies</strong></td><td class="text-right px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>55%</strong></td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Delivery and defined joint-module revenue share</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>Svashasan Labs</strong></td><td class="text-right px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>45%</strong></td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Delivery and defined joint-module revenue share</td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed">These percentages apply only to the agreed partnership scope, not Svashasan's entire business.</p>
+<h2 id="how-to-implement-that-split" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">How to implement that split</h2>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>A. Joint pilot and integration services</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">For work sold and delivered jointly, allocate 55% of the agreed distributable service revenue to MindGrove and 45% to Svashasan, provided this matches the actual delivery commitments of each side.</p>
+<p class="text-[16px] mb-4 leading-relaxed">We propose defining distributable revenue in the contract as cash actually collected, less agreed taxes, refunds and explicitly approved pass-through costs, with no vague overhead deductions by either party before the split is calculated.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>B. Separately priced, co-developed modules</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">For a module such as a diagnostic dashboard or simulation automation toolkit, we would apply a 55/45 net-receipts split in MindGrove's favour for the initial agreed commercial term, provided MindGrove has materially built and continues to support it.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The contract would set the term, maintenance obligations, minimum service levels and a review mechanism. A module that is no longer supported would not automatically continue generating the same revenue share indefinitely.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>C. Core Svashasan OS licensing</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan retains ownership of its core OS and is the lead commercial party for OS licensing. MindGrove would receive an agreed referral commission for qualifying customers it directly introduces and helps convert, plus fees or a revenue share for work it actually delivers.</p>
+<p class="text-[16px] mb-4 leading-relaxed">For example, a separately negotiated first-year referral commission could be <strong>10% of collected licence receipts</strong> from a customer originated by MindGrove. This is an illustrative starting point, not a market benchmark, and it would not stack automatically with other commissions or revenue shares.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>D. Subsequent engineering engagements</strong></p>
+<p class="text-[16px] mb-4 leading-relaxed">If MindGrove helps win an OEM pilot or a paid integration project, it would earn more through the delivery share on that engagement. This encourages MindGrove to contribute beyond writing code and gives both of us a reason to commercialize the product together.</p>
+<h2 id="example-a-joint-project" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Example: a joint project</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Suppose the two companies collect 100 monetary units in eligible service revenue after the explicitly agreed deductions.</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Allocation</th><th class="text-right font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Amount</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">MindGrove: 55%</td><td class="text-right px-3 py-2 border-b border-[#d9d2c5] align-top">55 units</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Svashasan: 45%</td><td class="text-right px-3 py-2 border-b border-[#d9d2c5] align-top">45 units</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>Total</strong></td><td class="text-right px-3 py-2 border-b border-[#d9d2c5] align-top"><strong>100 units</strong></td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed">This is revenue allocation, not profit. Each partner still covers the internal expenses it has agreed to bear.</p>
+<p class="text-[16px] mb-4 leading-relaxed">The principle is to give MindGrove a better near-term economic position in exchange for meaningful delivery ownership. <strong>We would not offset that advantage through equity, core architecture ownership or an unrestricted share of future OS licensing.</strong></p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="6-how-to-structure-the-90-day-execution-plan" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">6. How to structure the 90-day execution plan</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Our plan assumes that the simulation MVP and relevant code repositories are made accessible to the joint engineering team. Hardware-dependent milestones would be added only when the necessary test hardware is available.</p>
+<h2 id="phase-1-technical-and-commercial-discovery-days-1-14" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 1: Technical and commercial discovery (Days 1–14)</h2>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove would review the existing repository, build setup, simulation workflow and test coverage. Both parties would agree on scope, interfaces, delivery estimates, security controls and acceptance tests.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Gate:</strong> Approved technical assessment, deliverables, baseline performance and statement of work.</p>
+<h2 id="phase-2-engineering-infrastructure-days-15-30" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 2: Engineering infrastructure (Days 15–30)</h2>
+<p class="text-[16px] mb-4 leading-relaxed">We would implement reproducible builds, dependency control, automated smoke tests, logging conventions and a defined release workflow.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Gate:</strong> The agreed software can be built and tested using documented instructions in the designated environment.</p>
+<h2 id="phase-3-automated-simulation-and-diagnostics-days-31-60" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 3: Automated simulation and diagnostics (Days 31–60)</h2>
+<p class="text-[16px] mb-4 leading-relaxed">We would automate the agreed scenario suite, generate regression reports, package artifacts and implement the initial diagnostic interface.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Gate:</strong> The team can detect an intentionally introduced test failure and produce an understandable report without relying on a manually assembled test run.</p>
+<h2 id="phase-4-release-candidate-and-external-demonstration-days-61-90" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Phase 4: Release candidate and external demonstration (Days 61–90)</h2>
+<p class="text-[16px] mb-4 leading-relaxed">We would freeze a defined software version, resolve critical test failures, document remaining limitations and prepare a customer-facing technical demonstration.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>Gate:</strong> Svashasan accepts the release against agreed criteria and approves the demonstration package.</p>
+<h2 id="suggested-acceptance-criteria" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Suggested acceptance criteria</h2>
+<p class="text-[16px] mb-4 leading-relaxed">We would agree on numeric targets in the first two weeks after measuring the current baseline. Our initial proposal is:</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Metric</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Proposed target</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Reproducible build procedure</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Successfully executed in the agreed clean environment</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Agreed critical smoke tests</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">100% passing before release acceptance</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Selected recurring simulation scenarios automated</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">At least 80%</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Build and test output</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Generated and versioned for every release-candidate run</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Critical defects</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">None unresolved at acceptance</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Documentation</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Complete build, test, installation and rollback instructions</td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed">These are proposed programme targets, not claims about current performance or certification. The 80% test-automation target applies only to the selected scenarios in scope.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="7-automotive-safety-and-cybersecurity-boundaries" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">7. Automotive safety and cybersecurity boundaries</h1>
+<p class="text-[16px] mb-4 leading-relaxed">This is the area where we intend to be particularly disciplined, and we want to set expectations openly.</p>
+<p class="text-[16px] mb-4 leading-relaxed">ISO 26262 addresses functional safety in road vehicles, including safety-management processes and software development. ISO/SAE 21434 addresses automotive cybersecurity engineering across the vehicle electronics lifecycle. UNECE Regulations No. 155 and No. 156 address vehicle cybersecurity and software-update management, respectively. Their applicability and evidence requirements depend on the target vehicle, market and approval pathway.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Accordingly:</p>
+<ul class="list-disc pl-6 mb-4 text-[16px] leading-relaxed space-y-1"><li>MindGrove would not be presented as a functional-safety or automotive-cybersecurity specialist unless its credentials and capabilities have been verified.</li><li>No unvalidated AI model or LLM will be placed in the real-time braking, steering or other safety-critical control path.</li><li>We will establish code review, version control, test traceability, defect management and change approval before accepting deliverables.</li><li>Vehicle data and proprietary source code stay within explicitly approved access and data-handling boundaries.</li><li>An appropriately qualified automotive engineering and safety team will assess the path from simulation to hardware and eventually vehicle deployment.</li></ul>
+<p class="text-[16px] mb-4 leading-relaxed">MindGrove can help generate the engineering evidence and automate test procedures. A working pipeline alone does not make the overall OS safe or compliant, and we will plan for that separately.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="8-how-both-sides-win-commercially" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">8. How both sides win commercially</h1>
+<h2 id="mindgroves-benefit" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">MindGrove's benefit</h2>
+<p class="text-[16px] mb-4 leading-relaxed">A meaningful software delivery engagement, favourable economics on agreed joint projects, the opportunity to develop reusable engineering capabilities and a demonstrable reference implementation. With Svashasan's permission, MindGrove could use anonymized or approved case-study results to pursue other software engineering clients.</p>
+<h2 id="svashasans-benefit" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Svashasan's benefit</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Faster engineering iteration, better test repeatability, lower manual integration burden, a more credible release process and a stronger demonstration for OEMs and potential technology partners. Svashasan retains its core IP and the customer relationship.</p>
+<h2 id="joint-commercial-opportunity" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Joint commercial opportunity</h2>
+<p class="text-[16px] mb-4 leading-relaxed">Once the engineering package is stable, our companies can offer a defined integration and validation engagement to an EV OEM, Tier 1 supplier or other suitable mobility partner. The first external engagement should be a paid proof of concept, with scope and success criteria agreed in advance.</p>
+<p class="text-[16px] mb-4 leading-relaxed">Our joint commercial story will focus on what we can actually prove: reproducible testing, faster release cycles, measurable defect detection and easier integration. We will not claim a particular reduction in development cost or integration time until a baseline and comparison substantiate it.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="9-intellectual-property-and-contract-structure" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">9. Intellectual property and contract structure</h1>
+<p class="text-[16px] mb-4 leading-relaxed">The agreement would distinguish between three categories of technology.</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Category</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Proposed treatment</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Existing Svashasan IP</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Remains exclusively with Svashasan</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Existing MindGrove IP and general-purpose tools</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Remains with MindGrove, subject to the agreed licence terms for use within Svashasan OS</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">New Svashasan-specific modules and modifications</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Assigned to Svashasan, subject to legal review and the final agreement; MindGrove receives the negotiated commercial share</td></tr></tbody></table></div>
+<p class="text-[16px] mb-4 leading-relaxed">The contract would also explicitly cover source-code access, third-party and open-source licences, confidentiality, data use, subcontractors, acceptance criteria, warranties, support, termination and transfer of unfinished work.</p>
+<p class="text-[16px] mb-4 leading-relaxed">We ask that Svashasan confidential code and proprietary vehicle data not be used to train or improve external models without explicit written approval, and that all accepted deliverables be held in repositories controlled by Svashasan, with sufficient documentation for another engineering team to maintain them.</p>
+<p class="text-[16px] mb-4 leading-relaxed">We propose a master services agreement plus a narrowly defined statement of work for the first 90 days. The arrangement would be non-exclusive, without automatic equity, permanent OS royalties or unrestricted rights to the platform.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="10-risks-to-resolve-before-signing" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">10. Risks to resolve before signing</h1>
+<p class="text-[16px] mb-4 leading-relaxed">We suggest that the partnership proceed only after we have resolved the following together:</p>
+<div class="overflow-x-auto mb-6"><table class="w-full text-[16px] border-collapse"><thead><tr><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Risk</th><th class="text-left font-semibold text-gray-800 px-3 py-2 border-b border-[#d9d2c5]">Required action</th></tr></thead><tbody><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Insufficient automotive domain expertise</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Meet the assigned engineers and review a real code sample or small paid task</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Scope expands into the entire OS</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Limit the first statement of work to defined interfaces and deliverables</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Svashasan becomes dependent on MindGrove</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Provide code, build instructions, documentation and reproducible deployment</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">AI tooling introduces errors or data leakage</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Keep outputs reviewable, restrict sensitive data access and test failure modes</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Revenue-share disputes</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Define eligible revenue, allowable deductions, payment timing and attribution rules</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">A demo is mistaken for production readiness</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Document limitations and agree a separate automotive validation plan</td></tr><tr><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Parallel partners duplicate work</td><td class="text-left px-3 py-2 border-b border-[#d9d2c5] align-top">Maintain a clear workstream and interface map across all suppliers</td></tr></tbody></table></div>
+<h2 id="what-i-would-do-immediately" class="text-[18px] font-semibold text-gray-800 mb-3 mt-6">Proposed immediate next steps</h2>
+<ol class="list-decimal pl-6 mb-4 text-[16px] leading-relaxed space-y-1"><li>MindGrove nominates the engineers who would work on Svashasan OS and shares relevant examples of production software they have built.</li><li>Svashasan shares a carefully scoped technical brief, and MindGrove returns a delivery proposal for the integration and validation platform.</li><li>Both sides finalize the 55/45 economics once the scope, staffing and acceptance criteria are clear.</li></ol>
+<p class="text-[16px] mb-4 leading-relaxed">Given Svashasan's bootstrapped position and our discussions with other partners in OTA security and silicon, we aim to preserve cash, ownership and architectural control by avoiding upfront equity or an open-ended development commitment.</p>
+<hr class="border-[#d9d2c5] my-8">
+<h1 id="final-recommendation" class="text-[22px] font-bold text-gray-800 mb-6 mt-10">Final recommendation</h1>
+<p class="text-[16px] mb-4 leading-relaxed">Svashasan Labs offers MindGrove Technologies a slightly superior share of the engineering and co-developed-module economics and real ownership of delivery, while Svashasan stays in control of the core OS, automotive safety decisions, customer relationship and long-term licensing business.</p>
+<p class="text-[16px] mb-4 leading-relaxed"><strong>We believe the partnership earns the right to expand by shipping a working release candidate in 90 days, not by signing a broad collaboration announcement. We would be glad to start with MindGrove.</strong></p>
+        </div>
+    </main>
+    </div>
+
+  <!-- Footer -->
+  <footer style="background: #ffffff; border-top: 1px solid #f3f4f6; margin-top: 64px; padding: 40px 20px; color: #6b7280; font-size: 0.85rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-bottom: 40px;">
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Research</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="index.html" style="color: inherit; text-decoration: none;">Research Overview</a></li>
+            <li><a href="index (2).html" style="color: inherit; text-decoration: none;">Moving Turns</a></li>
+            <li><a href="heuristic.html" style="color: inherit; text-decoration: none;">Heuristic Baseline</a></li>
+            <li><a href="absence.html" style="color: inherit; text-decoration: none;">Evidence of Absence</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Company</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="https://svashasan.com/" style="color: inherit; text-decoration: none;">About Svashasan</a></li>
+            <li><a href="https://svashasan.com/research/" style="color: inherit; text-decoration: none;">Research Portal</a></li>
+            <li><a href="mailto:namaste@svashasan.com" style="color: inherit; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="font-weight: 650; color: #0b0b0b; margin-bottom: 12px; font-size: 0.9rem;">Resources</h5>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="https://svashasan.com/support" style="color: inherit; text-decoration: none;">Developer Documentation</a></li>
+            <li><a href="#" style="color: inherit; text-decoration: none;">API Docs</a></li>
+            <li><a href="#" style="color: inherit; text-decoration: none;">Getting Started</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #f3f4f6; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>© 2026 Svashasan Labs. All Rights Reserved.</div>
+        <div style="display: flex; gap: 20px; font-size: 0.8rem;">
+          <a href="https://svashasan.com/privacy-policy" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+          <span>|</span>
+          <a href="https://svashasan.com/terms-of-use" style="color: inherit; text-decoration: none;">Terms & Conditions</a>
+          <span>|</span>
+          <a href="https://svashasan.com/cookie-policy" style="color: inherit; text-decoration: none;">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  // Scrollspy for left navigation
+  const navLinks = document.querySelectorAll('#toc .nav-link');
+  const sections = Array.from(navLinks).map(link => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean);
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const link = document.querySelector(`#toc .nav-link[href="#${id}"]`);
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  sections.forEach(section => observer.observe(section));
+
+  // Search functionality
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const headings = Array.from(document.querySelectorAll('main h1, main h2, main h3')).filter(h => h.id);
+
+  // Build a searchable index: for each section (heading), collect all text content beneath it
+  const searchIndex = [];
+  headings.forEach((heading, i) => {
+    const nextHeading = headings[i + 1];
+    let contentText = '';
+    let node = heading.nextElementSibling;
+    while (node && node !== nextHeading) {
+      contentText += ' ' + node.textContent;
+      node = node.nextElementSibling;
+    }
+    searchIndex.push({
+      id: heading.id,
+      title: heading.textContent.trim(),
+      content: contentText.trim(),
+    });
+  });
+
+  function getSnippet(text, query, maxLen) {
+    const lower = text.toLowerCase();
+    const idx = lower.indexOf(query);
+    if (idx === -1) return '';
+    const start = Math.max(0, idx - 40);
+    const end = Math.min(text.length, idx + query.length + 60);
+    let snippet = (start > 0 ? '…' : '') + text.slice(start, end).trim() + (end < text.length ? '…' : '');
+    // highlight the matched term
+    const regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    snippet = snippet.replace(regex, '<mark class="bg-yellow-200 rounded px-0.5">$1</mark>');
+    return snippet;
+  }
+
+  function handleGlobalSearch(value) {
+    const query = value.trim().toLowerCase();
+    if (query.length < 2) {
+      searchResults.classList.add('hidden');
+      searchResults.innerHTML = '';
+      return;
+    }
+
+    const results = [];
+    searchIndex.forEach(entry => {
+      const titleMatch = entry.title.toLowerCase().includes(query);
+      const contentMatch = entry.content.toLowerCase().includes(query);
+      if (titleMatch || contentMatch) {
+        const snippet = contentMatch ? getSnippet(entry.content, query, 120) : '';
+        results.push({ id: entry.id, title: entry.title, snippet, titleMatch });
+      }
+    });
+
+    // Sort: title matches first, then content matches
+    results.sort((a, b) => (b.titleMatch ? 1 : 0) - (a.titleMatch ? 1 : 0));
+
+    const top = results.slice(0, 12);
+
+    if (top.length === 0) {
+      searchResults.innerHTML = '<div class="px-4 py-3 text-xs text-gray-400">No results found.</div>';
+      searchResults.classList.remove('hidden');
+      return;
+    }
+
+    searchResults.innerHTML = top.map(r =>
+      `<a href="#${r.id}" class="search-result-link block px-4 py-2 text-xs text-brandBlack hover:bg-gray-100 border-b border-gray-50 last:border-0">
+        <div class="font-semibold">${r.title}</div>
+        ${r.snippet ? '<div class="text-[11px] text-gray-500 mt-0.5 leading-snug">' + r.snippet + '</div>' : ''}
+      </a>`
+    ).join('');
+    searchResults.classList.remove('hidden');
+  }
+
+  // Make handleGlobalSearch available globally for the inline oninput attribute
+  window.handleGlobalSearch = handleGlobalSearch;
+
+  // Close dropdown and clear input when clicking a result
+  searchResults.addEventListener('click', (e) => {
+    const link = e.target.closest('.search-result-link');
+    if (link) {
+      searchResults.classList.add('hidden');
+      searchInput.value = '';
+    }
+  });
+
+  // Hide results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+      searchResults.classList.add('hidden');
+    }
+  });
+
+  // Keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchResults.classList.add('hidden');
+      searchInput.value = '';
+      searchInput.blur();
+    }
+  });
+</script>
+
+</body>
+</html>
